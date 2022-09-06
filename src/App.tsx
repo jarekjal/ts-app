@@ -2,6 +2,15 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+function Counter({ count }: {count: number}) {
+  return (
+    <div>
+      <p>Counter: {count}</p>
+    </div>
+  );
+}
+
+
 function App() {
   return (
     <div className="App">
@@ -18,6 +27,7 @@ function App() {
         >
           Learn React
         </a>
+        
       </header>
     </div>
   );
